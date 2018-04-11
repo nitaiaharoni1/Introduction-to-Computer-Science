@@ -1,0 +1,10 @@
+@echo off
+IF "%~1"=="" GOTO LAUNCH
+GOTO SETUP
+
+:SETUP
+GOTO :EOF
+
+:LAUNCH
+cmd /K %0 LAUNCHNOW
+GOTO :EOF
